@@ -22,13 +22,13 @@ def RandomPasswordGenerator(passLen=10):
         #print(simbolos)
         if aleatorio==1:
             password.append(numeros)
-            #password[value]=numeros
+            
         if aleatorio == 2:
             password.append(letras)
-            #password[value]=letras
+            
         if aleatorio == 3:
             password.append(simbolos)
-            #password[value]=simbolos
+            
     #
     #
 

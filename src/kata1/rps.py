@@ -24,7 +24,7 @@ def Game():
     #
     aleatorio= randint(0,3)
     ai=options[aleatorio]
-    #print(aleatorio)
+    #
     #
 
     #
