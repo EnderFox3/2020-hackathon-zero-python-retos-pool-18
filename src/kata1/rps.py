@@ -7,7 +7,7 @@ options = ["Piedra", "Papel", "Tijeras"]
 #'Ganaste!'
 #'Perdiste!'
 def quienGana(player, ai):
-    return "hola"
+    return ""
 
 # Entry Point
 def Game():
