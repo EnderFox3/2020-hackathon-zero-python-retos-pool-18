@@ -6,7 +6,6 @@ import string
 def RandomPasswordGenerator(passLen=10):
     #
     #
-
     password = [0]
 
     for value in range(0,passLen):
@@ -22,8 +21,7 @@ def RandomPasswordGenerator(passLen=10):
             password.append(letras)
             
         if aleatorio == 3:
-            password.append(simbolos)
-            
+            password.append(simbolos)    
     #
     #
 

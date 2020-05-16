@@ -12,6 +12,7 @@ logger = logging.getLogger(__name__)
 # Definimos algunas funciones para los comandos. Estos generalmente toman los dos argumentos update y context
 def start(update, context):
     """Envia un mensaje cuando se emita el comando /start."""
+    update.message.reply_text("Bienvenido")
     return ""
 
 def help(update, context):
