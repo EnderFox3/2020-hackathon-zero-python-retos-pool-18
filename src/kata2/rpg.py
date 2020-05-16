@@ -6,11 +6,6 @@ import string
 def RandomPasswordGenerator(passLen=10):
     #
     #
-   
-    #letras = random.choice(string.letters)
-    
-
-    
 
     password = [0]
 
