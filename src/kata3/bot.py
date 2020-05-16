@@ -17,15 +17,20 @@ def start(update, context):
 
 def help(update, context):
     """Envia un mensaje cuando se emita el comando /help."""
+    update.message.reply_text("En que te podemos ayudar?")
     return ""
 
 def mayus(update, context):
-        #
-        return ""
+    text = str(context.args[0])
+    text = text.upper()
+    update.message.reply_text(text)
+    return text
+        
 
 def alreves(update, context):
     """Repite el mensaje del usuario."""
-    #
+    palabra = update.message.text[::-1]
+    update.message.reply_text(palabra)
     return ""
 
 def error(update, context):
@@ -38,15 +43,18 @@ def main():
     updater = Updater("1102785689:AAE34yvxtVJqJCrGf-I72-FqmKqyRSicEVI", use_context=True)
 
     # Es el Registro de Comandos a través del dispartcher
-    dp = #
+    dp = updater.dispatcher
 
     # Añadimos a la lista de Registro todos los comandos con su función [start - help - mayus]
-    #
-    #
-    #
+    dp.add_handler(CommandHandler("start",start))
+    dp.add_handler(CommandHandler("help",help))
+    dp.add_handler(CommandHandler("mayus",mayus))
+    
+    
 
     # Este comando es un Trigger que se lanza cuando no hay comandos [alreves]
-    #
+    dp.add_handler(CommandHandler("alreves",alreves))
+    
     
     # Y este espera al error
     dp.add_error_handler(error)
